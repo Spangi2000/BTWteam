@@ -46,7 +46,7 @@ def upgrade():
         sa.PrimaryKeyConstraint('id'),
     )
     op.create_table(
-        'rental_session',
+        'mnk_session',
         sa.Column('id', sa.Integer(), nullable=False),
         sa.Column('user_id', sa.Integer(), nullable=False),
         sa.Column('item_id', sa.Integer(), nullable=False),
@@ -74,7 +74,7 @@ def upgrade():
         sa.Column('create_ts', sa.DateTime(), nullable=False),
         sa.ForeignKeyConstraint(
             ['session_id'],
-            ['rental_session.id'],
+            ['mnk_session.id'],
         ),
         sa.PrimaryKeyConstraint('id'),
     )
@@ -82,7 +82,7 @@ def upgrade():
 
 def downgrade():
     op.drop_table('event')
-    op.drop_table('rental_session')
+    op.drop_table('mnk_session')
     op.drop_table('item')
     op.drop_table('strike')
     op.drop_table('item_type')

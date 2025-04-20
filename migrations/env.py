@@ -3,8 +3,8 @@ from logging.config import fileConfig
 from alembic import context
 from sqlalchemy import engine_from_config, pool
 
-from rental_backend.models.base import BaseDbModel
-from rental_backend.settings import get_settings
+from mnk_backend.models.base import BaseDbModel
+from mnk_backend.settings import get_settings
 
 
 # this is the Alembic Config object, which provides

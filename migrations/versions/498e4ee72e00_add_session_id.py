@@ -18,7 +18,7 @@ depends_on = None
 
 def upgrade():
     op.add_column('strike', sa.Column('session_id', sa.Integer(), nullable=True))
-    op.create_foreign_key(None, 'strike', 'rental_session', ['session_id'], ['id'])
+    op.create_foreign_key(None, 'strike', 'mnk_session', ['session_id'], ['id'])
 
 
 def downgrade():
