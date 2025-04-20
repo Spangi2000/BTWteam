@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: logger_middleware
+Version: 1.0.2
+Summary: Middleware для логирования запросов в FastAPI
+Author: DROPDATABASE
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: starlette
+Requires-Dist: httpx
+Requires-Dist: auth-lib-profcomff[fastapi]
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
